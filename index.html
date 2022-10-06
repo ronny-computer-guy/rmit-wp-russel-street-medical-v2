@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russel Street Medica</title>
+    <link rel="stylesheet" href="./style.css">  
+
+    <style>
+      h3{
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+        align-self: flex-start;
+      }
+    </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./public/img/logo.png" alt="russel street medical logo">
+            <span> Russel Street Medical </span>
+        </a>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#who-we-are">Who We Are</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service-area">Service Area</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./book.html">Book</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- About Us Subsection -->
+    <style>
+      .about-us{
+        box-shadow: var(--dark-shadow);
+      }
+      .about-us p{
+        font-size: 1.2rem;
+      }
+      .about-us-header {
+          display: flex;
+          align-items: flex-end;    
+          height: 100vh;
+          background-image: url(./public/img/hospital-reception.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        .about-us-header .container{
+          flex-direction: column;
+        }
+        .about-us-header .content{
+          position: relative;
+          width: 100vw;
+          background-color: var(--clr-primary);
+          opacity: .8;
+          padding: 50px 20%;
+          color: white;
+          font-size: 1rem;
+          font-weight: 600;
+          text-align: center;
+        }
+        .about-us-body{
+          flex-direction: column;
+          padding-top: 80px;
+          padding-bottom: 100px;
+        }
+        .about-us-body p{
+          margin-bottom: 30px;
+          padding-left: 20px;
+        }
+        .about-us-body .price-table{
+          margin-left: 20px;
+        }
+        .price-table{
+          border-collapse:collapse;
+          border-spacing:0;
+          width: calc(100% - 20px);
+        }
+        .price-table td{
+          border:white solid 1px;
+          font-size:14px;
+          overflow:hidden;padding:13px 11px;word-break:normal;
+        }
+        .price-table th{
+          border:white solid 1px;font-size:14px;
+          font-weight:normal;overflow:hidden;padding:13px 11px;word-break:normal;
+        }
+        .price-table .price-table-name{
+          font-size: 1.2rem; background-color: var(--clr-primary);opacity:.8;color:#ffffff;text-align:center;vertical-align:top
+        }
+        .price-table .price-table-value{
+          font-size: 1.2rem; background-color: var(--clr-primary);opacity:.6;color:#ffffff;text-align:center;vertical-align:top
+        }
+    </style>
+    <section class="about-us">
+      <header class="about-us-header" id="home">
+        <div class="container">
+          <div class="content">
+            <h4>OPENING TIME : Mon - Sun: 9am - 6pm</h4>
+          </div>
+        </div>
+      </header>
+      <div class="about-us-body container" id="about-us">
+        <h3>ABOUT US</h3>
+        <p>
+          Russel Street Medical opened in 2020 and is located in Melbourne’s CBD at 340 Russel Street Melbourne, just opposite The Old Melbourne Jail and within walking distance of Melbourne Central Train Station.<br>
+          We strive to help all of our patients with a focus on preventative health care, a view to managing chronic health conditions with a holistic approach, and with access to a wide range of specialist care providers when needed.<br>
+          Under partnerships, we are able to offer RMIT students & staff discounted rates.
+        </p>
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th class="price-table-name">Consultation</th>
+              <th class="price-table-name">Normal Fee</th>
+              <th class="price-table-name">RMIT Member Fee</th>
+              <th class="price-table-name">Medicare Rebate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="price-table-name">Standard</td>
+              <td class="price-table-value">$85.00</td>
+              <td class="price-table-value"><span style="font-weight:400;font-style:normal">$60</span>.50</td>
+              <td class="price-table-value"><span style="font-weight:400;font-style:normal">$85.00</span></td>
+            </tr>
+            <tr>
+              <td class="price-table-name">Long or Complex</td>
+              <td class="price-table-value"><span style="font-weight:400;font-style:normal">$130.00</span></td>
+              <td class="price-table-value"><span style="font-style:normal">$91.00</span></td>
+              <td class="price-table-value">$76.95</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Who We Are Subsection -->
+    <style>
+      .who-we-are .container{
+        flex-direction: column;
+        margin: 80px auto 120px auto;
+      }
+      .who-we-are h3{
+        margin-bottom: 50px;
+      }
+      .who-we-are .context{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .who-we-are h4{
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+      }
+      .who-we-are p{
+        font-size: 1rem;
+      }
+      .who-we-are img{
+        width: 100%; 
+      }
+      .card{
+        box-shadow: var(--dark-shadow);
+        margin: 0px 20px;
+        padding: 15px;
+      }
+    </style>
+
+    <section class="who-we-are" id="who-we-are">
+      <div class="container">
+        <h3 class="">WHO WE ARE</h3>
+        <div class="context">
+            <div class="card">
+              <img src="./public/img/doctor-asian-lady.jpg" alt="doctor lady">
+              <article>
+                <h4>Ms Kiyoko Tsu</h4>
+                <p>
+                  Kiyoko Tsu completed her Bachelor of Nursing at the Yong Loo Lin School of Medicine in Singapor e in 2019.
+                  She is an accredited Nurse Immuniser and has worked in various hospitals within metropolitan Melbourne.
+                </p>
+              </article>
+            </div>
+            <div class="card">
+              <img src="./public/img/doctor-white-lady.jpg" alt="doctor lady">
+              <article>
+                <h4>Dr. Abigale Laurentis</h4>
+                <p>
+                  Abigale Laurentis completed her medical degree at the University of Queensland in 2013, whereshe also obtained a Bachelor of Science in Biomedicine.
+                  Over her training and practice, Abigale has worked in a variety of clinical settings including specialities at Latrobe Health.
+                </p>
+              </article>
+            </div>
+            <div class="card">
+              <img src="./public/img/doctor-white-man.jpg" alt="doctor man">
+              <article>
+                <h4>Dr. Stephen Hill</h4>
+                <p>
+                  Stephen Hill graduated from Auckland University in New Zealand in 2014, and obtained his Fellowship from the Royal Australian College of General Practitioners in 2017.
+                  Over his training and practice, Stephen worked in internal medicine at the Royal Children's Hospital Melbourne before transitioning to General Practice.
+                </p>
+              </article>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Area Subsection -->
+    <style>
+      .service-area{
+        box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+      }
+      .service-area .container{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 80px;
+      }
+      .register-form {
+        border-radius: 15px;
+        width: 100%;
+        padding: 20px;
+      }
+      .form-element{
+        margin-top: 20px;
+      }
+      .form-element input{
+        border: none;
+      }
+      .register-btn:hover{
+        opacity: 80%;
+      }
+      .service-area h4{
+        margin-top: 30px;
+      }
+      .register-btn{
+        margin-top: 30px;
+        width: 100%; 
+        padding: .7rem;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--clr-primary); 
+        color: white;
+      }
+      .book-link{
+        font-weight: 600;
+        color: var(--clr-primary)
+      }      
+    </style>
+    <section class="service-area" id="service-area">
+      <div class="container">
+        <h3>Service Area</h3>
+        <form id="register-form" class="register-form">
+          <div class="form-element">
+              <label class="form-label">Name</label>
+              <input type="text" name="name">
+          </div>
+          <div class="form-element">
+            <label class="form-label">Phone Number</label>
+            <input type="text" name="number">
+          </div>
+          <button class="register-btn">Register Now</button>
+          <p>
+            Register Now to become of of our members <br><br>
+            If you already become the member of the Russel Street Medical, you can
+            <a class="book-link" href="./book.html">Book Right Now! </a>
+          </p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer display-grid">
+    <div class="container">
+        <div class="footer-column">
+            <h2>Payment Method</h2>
+            <div class="payment-images">
+                <img class="payment-image" src="./public/img/cc-visa-brands.svg" alt="">
+                <img class="payment-image" src="./public/img/cc-mastercard-brands.svg" alt="">
+                <img class="payment-image" src="./public/img/cc-amex-brands.svg" alt="">
+                <img class="payment-image" src="./public/img/cc-discover-brands.svg" alt="">
+            </div>
+        </div>
+        <div class="footer-column">
+          <h2>Developer</h2>
+          <h3>Name:</br>Yao Lin (Ronny)</h3>
+          <h3>Student ID:</br>s3747404</h3>
+        </div>
+        <div class="footer-column">
+            <h2>Contact Us</h2>
+            <h3>E–mail:</br>help@russelstreetmedical.com</h3>
+            <h3>Call us:</br>04353322211</h3>
+        </div>
+        <div class="footer-column">
+            <h2>Follow Us</h2>
+            <div class="social-images">
+                <img class="social-image" src="./public/img/facebook-square-brands.svg" alt="">
+                <img class="social-image" src="./public/img/instagram-square-brands.svg" alt="">
+            </div>
+        </div>
+    </div>
+  </footer>
+
+</body>
+</html>
